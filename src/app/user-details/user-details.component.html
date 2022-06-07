@@ -1,0 +1,15 @@
+<button mat-raised-button color="primary" routerLink="/">Back</button>
+<h1>User {{ userDetails["id"] }}</h1>
+<div>
+  <img [src]="userDetails['avatar']" alt="" class="float-left" />
+  <h2>Details</h2>
+  <p>First Name: {{ userDetails["first_name"] }}</p>
+  <p>Last Name: {{ userDetails["last_name"] }}</p>
+  <p>Email Address Name: {{ userDetails["email"] }}</p>
+
+  <h2>Resource</h2>
+  <p>Name: {{ userDetails["name"] }}</p>
+  <p>Year: {{ userDetails["year"] }}</p>
+  <p>Color: {{ userDetails["color"] }}</p>
+  <p>Pantone Value: {{ userDetails["pantone_value"] }}</p>
+</div>

@@ -1,0 +1,23 @@
+<h1>Users</h1>
+<div class="row">
+  <!-- this is User cards field -->
+  <div class="col-sm">
+    <div class="row">
+      <ng-container *ngFor="let user of users">
+        <div class="col-sm-3"><app-card [card]="user"></app-card></div>
+      </ng-container>
+    </div>
+  </div>
+  <!-- <p>{{ users | json }}</p> -->
+</div>
+<div>
+  <button mat-raised-button color="primary" (click)="changePage(-1)">
+    Prev</button
+  >Page {{ currentPage }} of 2<button
+    mat-raised-button
+    color="primary"
+    (click)="changePage(1)"
+  >
+    Next
+  </button>
+</div>
