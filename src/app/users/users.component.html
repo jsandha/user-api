@@ -11,12 +11,18 @@
   <!-- <p>{{ users | json }}</p> -->
 </div>
 <div>
-  <button mat-raised-button color="primary" (click)="changePage(-1)">
+  <button
+    mat-raised-button
+    [disabled]="currentPage == 1"
+    color="primary"
+    (click)="changePage(-1)"
+  >
     Prev</button
   >Page {{ currentPage }} of 2<button
     mat-raised-button
     color="primary"
     (click)="changePage(1)"
+    [disabled]="currentPage == totalPage"
   >
     Next
   </button>
